@@ -29,6 +29,7 @@ jobs:
 
     - name: Build with Buildozer
       run: |
+        pip install "pip<24.0"
         yes | buildozer -v android debug
 
     - name: Upload APK
